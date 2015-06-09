@@ -1,0 +1,36 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.3.RELEASE)
+
+2015-06-02 11:09:07.276  INFO 35034 --- [           main] pl.codeleak.demos.sbt.Application        : Starting Application v1.0 on SunZhaoyudeMacBook-Pro.local with PID 35034 (/Users/sunzhaoyu/job2015/spring-tutorial/qr-demo-ex/qrcode/qr-demo-ex-1.0.jar started by sunzhaoyu in /Users/sunzhaoyu/job2015/spring-tutorial/qr-demo-ex/qrcode)
+2015-06-02 11:09:07.309  INFO 35034 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36784067: startup date [Tue Jun 02 11:09:07 CST 2015]; root of context hierarchy
+2015-06-02 11:09:08.253  INFO 35034 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8190 (http)
+2015-06-02 11:09:08.405  INFO 35034 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-06-02 11:09:08.405  INFO 35034 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2015-06-02 11:09:08.477  INFO 35034 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-06-02 11:09:08.477  INFO 35034 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1170 ms
+2015-06-02 11:09:08.954  INFO 35034 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-06-02 11:09:08.959  INFO 35034 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-06-02 11:09:09.033  INFO 35034 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-06-02 11:09:09.139  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36784067: startup date [Tue Jun 02 11:09:07 CST 2015]; root of context hierarchy
+2015-06-02 11:09:09.181  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto java.lang.String pl.codeleak.demos.sbt.home.HomeController.index()
+2015-06-02 11:09:09.181  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String pl.codeleak.demos.sbt.home.HomeController.regMSG(java.lang.String,org.springframework.ui.Model) throws java.io.UnsupportedEncodingException
+2015-06-02 11:09:09.181  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/decode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> pl.codeleak.demos.sbt.home.HomeController.decodeMessage(java.lang.String) throws java.io.UnsupportedEncodingException
+2015-06-02 11:09:09.181  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/generate],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<?> pl.codeleak.demos.sbt.home.HomeController.generateQRcode(java.lang.String) throws com.google.zxing.WriterException,java.io.IOException
+2015-06-02 11:09:09.183  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/properties],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto java.util.Properties pl.codeleak.demos.sbt.home.HomeController.properties()
+2015-06-02 11:09:09.184  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-06-02 11:09:09.185  INFO 35034 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-06-02 11:09:09.200  INFO 35034 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/m/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-06-02 11:09:09.200  INFO 35034 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-06-02 11:09:09.200  INFO 35034 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-06-02 11:09:09.453  INFO 35034 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-06-02 11:09:09.510  INFO 35034 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8190 (http)
+2015-06-02 11:09:09.512  INFO 35034 --- [           main] pl.codeleak.demos.sbt.Application        : Started Application in 2.438 seconds (JVM running for 2.783)
+2015-06-02 11:09:23.969  INFO 35034 --- [nio-8190-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-06-02 11:09:23.970  INFO 35034 --- [nio-8190-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-06-02 11:09:23.984  INFO 35034 --- [nio-8190-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
