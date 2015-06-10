@@ -15,10 +15,12 @@
     <script>
     $(document).ready(function(){
     	$("#genBtn").click( function(){
-    		var txt=$("#input").val();
+    		var txt = $("#input").val();
+    		//txt = window.btoa(txt);
+    		txt = encodeURI( txt, "UTF-8" );
     		//txt = encodeURI( txt );
-    		txt=escape(txt);
-    		txt=txt.replace(/+/g,"%u002B");
+    		//txt=escape(txt);
+    		//txt=txt.replace("/+/g","%u002B");
     		alert(txt);
     		$.post("/generate",
     				  txt,

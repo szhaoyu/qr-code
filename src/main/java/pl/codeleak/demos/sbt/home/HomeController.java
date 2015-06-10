@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.Principal;
@@ -120,7 +121,9 @@ class HomeController {
     	
     	//
     	//Encoder en=Base64.getEncoder();
-    	body = new String(Base64.getUrlDecoder().decode(body));
+    	body = URLDecoder.decode( body, "UTF-8");
+    	//body = new String( Base64.getDecoder().decode(body) );
+    	//body = new String(Base64.getUrlDecoder().decode(body));
     	log.info( body );
     	/*
     	String en_str = Base64.getEncoder().encodeToString( body.getBytes("utf-8") );  
